@@ -101,6 +101,54 @@ section {
   color: #333;
 }
 
+.home {
+  background-image: url('images/Sorghum_Yahoo.webp');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 0;
+}
+
+.home h1,
+.home p {
+  position: relative;
+  z-index: 1;
+}
+
+.home h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: auto;
+}
+
+.about {
+  background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+              url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
+  padding: 100px 20px;
+  color: #333;
+}
+
+
 .items {
   background-color: #eafaea;
 }
