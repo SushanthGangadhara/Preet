@@ -64,55 +64,13 @@ section {
 }
 
 .home {
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
-              url('https://images.unsplash.com/photo-1587049352843-bd89103f38df') no-repeat center center/cover;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              url('images/Sorghum_Yahoo.webp') no-repeat center center/cover;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.home h1 {
-  font-size: 3.2rem;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.home p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: auto;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-}
-
-.section-title {
-  text-align: center;
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-}
-
-.content {
-  max-width: 800px;
-  margin: auto;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-}
-
-.home {
-  background-image: url('images/Sorghum_Yahoo.webp');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  padding: 100px 20px;
   position: relative;
 }
 
@@ -120,7 +78,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
@@ -141,13 +99,27 @@ section {
   margin: auto;
 }
 
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
 .about {
   background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
               url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center/cover;
   padding: 100px 20px;
   color: #333;
 }
-
 
 .items {
   background-color: #eafaea;
@@ -185,6 +157,28 @@ section {
 .item h3 {
   font-size: 1.1rem;
   margin-top: 0.5rem;
+}
+
+.cart {
+  background-color: #f6fff6;
+}
+
+.cart p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.checkout-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .login {
@@ -231,3 +225,61 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+.item button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+  background-color: var(--primary-color);
+}
+
+.checkout-btn {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: var(--primary-color);
+}
+
+#checkout-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#checkout-form input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#checkout-form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(30, 86, 49, 0.3);
+}
+
+

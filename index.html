@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Preetreat - Millets for Life</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 <body>
 
@@ -30,28 +31,41 @@
     </div>
   </section>
 
- <section id="items" class="items">
-  <h2 class="section-title">Our Products</h2>
-  <div class="items-grid">
-    <div class="item">
-      <img src="images/Foxtail Millet.jpg" alt="Millet Field">
-      <h3>Millet Field</h3>
+  <section id="items" class="items">
+    <h2 class="section-title">Our Products</h2>
+    <div class="items-grid">
+      <div class="item">
+        <img src="images/Foxtail Millet.jpg" alt="Millet Field">
+        <h3>Foxtail Millet</h3>
+      </div>
+      <div class="item">
+        <img src="images/Glassjar.jpg" alt="Millet Seeds">
+        <h3>Millet Seeds</h3>
+      </div>
+      <div class="item">
+        <img src="images/image-millet.avif" alt="Organic Millet">
+        <h3>Organic Millet</h3>
+      </div>
+      <div class="item">
+        <img src="images/pexels-photo.jpeg" alt="Millet Harvest">
+        <h3>Millet Harvest</h3>
+      </div>
     </div>
-    <div class="item">
-      <img src="images/Glassjar.jpg" alt="Millet Seeds">
-      <h3>Millet Seeds</h3>
-    </div>
-    <div class="item">
-      <img src="images/image-millet.avif" alt="Organic Millet">
-      <h3>Organic Millet</h3>
-    </div>
-    <div class="item">
-      <img src="images/pexels-photo.jpeg" alt="Millet Harvest">
-      <h3>Millet Harvest</h3>
-    </div>
-  </div>
-</section>
+  </section>
 
+  <section id="cart" class="cart">
+    <h2 class="section-title">Your Cart</h2>
+    <div id="cart-items"></div>
+    <p>Total: ₹<span id="total">0</span></p>
+
+    <form id="checkout-form">
+      <input type="text" id="rzp-name" placeholder="Your Name" required />
+      <input type="email" id="rzp-email" placeholder="Your Email" required />
+      <input type="tel" id="rzp-contact" placeholder="Your Contact" required />
+    </form>
+
+    <button onclick="checkout()" class="checkout-btn">Proceed to Pay</button>
+  </section>
 
   <section id="login" class="login">
     <h2 class="section-title">Login</h2>
@@ -66,5 +80,6 @@
     &copy; 2025 Preetreat. All rights reserved.
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
